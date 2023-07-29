@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Entrada Numérica</h1>
+    <div class="input-section">
+      <label for="numericInput">Ingrese un valor numérico:</label>
+      <input type="text" id="numericInput" [(ngModel)]="numericValue" (keydown)="validateNumericInput($event)">
+    </div>
+    <div class="output-section">
+      <p *ngIf="isNumeric; else errorText">El valor ingresado es numérico.</p>
+      <ng-template #errorText>
+        <p style="color: red;">¡Error! Ingrese solo datos numéricos.</p>
+      </ng-template>
+    </div>
+  </div>
+  

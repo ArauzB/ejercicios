@@ -1,0 +1,14 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .input-section {
+    margin-bottom: 10px;
+  }
+  
+  .input-section label,
+  .input-section input {
+    margin-right: 10px;
+  }
+  

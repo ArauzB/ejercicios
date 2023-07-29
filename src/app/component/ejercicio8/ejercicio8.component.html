@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Aumento de Sueldo</h1>
+    <div class="input-section">
+      <label for="salary">Ingrese el sueldo del trabajador:</label>
+      <input type="number" id="salary" [(ngModel)]="sueldo">
+      <button (click)="calcularAumento()">Calcular Aumento</button>
+    </div>
+    <div class="output-section" *ngIf="aumento > 0">
+      <p>El nuevo sueldo con el aumento es: {{ nuevoSueldo | number:'1.2-2' }}</p>
+    </div>
+    <div class="output-section" *ngIf="aumento === 0">
+      <p>No se aplicó ningún aumento.</p>
+    </div>
+  </div>
+  

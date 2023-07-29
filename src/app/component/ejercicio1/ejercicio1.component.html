@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Resolver Problema Matemático</h1>
+    <div class="input-section">
+      <label for="a">a:</label>
+      <input type="number" id="a" [(ngModel)]="a" (change)="calculate()">
+      
+      <label for="b">b:</label>
+      <input type="number" id="b" [(ngModel)]="b" (change)="calculate()">
+  
+      <label for="c">c:</label>
+      <input type="number" id="c" [(ngModel)]="c" (change)="calculate()">
+  
+      <!-- Agrega más variables según sea necesario para las demás expresiones -->
+      <!-- d, e, f, g, h, m, n, p, q, r, s, x, y, etc. -->
+    </div>
+  
+    <div class="output-section">
+      <p>Resultados:</p>
+      <ul>
+        <li>a) 3/2 + 4/3 = {{ resultA }}</li>
+        <li>b) 1/(x-5) - 3*x*y/4 = {{ resultB }}</li>
+        <li>c) a*a/(b-c) + (d-e)/(f-g*h/j) = {{ resultC }}</li>
+        <li>d) m/n + p = {{ resultD }}</li>
+        <li>e) (m+n/p)/(q-r/s) = {{ resultE }}</li>
+        <li>f) (3*a+b)/(c-(d+5*e)/(f+g/(2*h))) = {{ resultF }}</li>
+      </ul>
+    </div>
+  </div>
+  
