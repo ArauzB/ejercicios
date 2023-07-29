@@ -3,7 +3,7 @@
     <div *ngFor="let pizza of pizzas" class="pizza-item">
       <h2>{{ pizza.name }}</h2>
       <img [src]="pizza.image" alt="{{ pizza.name }}">
-      <p>Precio: ${{ pizza.price }}</p>
+      <p>Precio: Q{{ pizza.price }}</p>
       <p>Cantidad a vender: {{ pizza.quantity }}</p>
       <button (click)="incrementQuantity(pizza)">Agregar al carrito</button>
     </div>
